@@ -1,0 +1,128 @@
+.seccion__productos{
+    background-color: #f5f5f5;
+    padding: 3rem 0;
+}
+
+.star_wars,
+.consolas,
+.diversos{
+    margin: 0 0 2rem 0;
+}
+
+.star_wars__head,
+.consolas__head,
+.diversos__head{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 1rem;
+}
+
+.star_wars__head__titulo-principal,
+.consolas__head__titulo-principal,
+.diversos__head__titulo-principal{
+    font-weight: 700;
+    font-size: 2rem;
+    color: #464646;
+}
+
+.star_wars__head__boton,
+.consolas__head__boton,
+.diversos__head__boton{
+    color: #2A7AE4;
+    font-weight: 800;
+}
+
+.star_wars__head__boton::after,
+.consolas__head__boton::after,
+.diversos__head__boton::after{
+	content: '🡪';
+	color: #2A7AE4;
+    margin-left: .6rem;
+}
+
+.star_wars__productos,
+.consolas__productos,
+.diversos__productos,
+.productos_admin,
+.producto_similares,
+.productos_index{
+    display: grid;
+    gap: 1rem;
+    grid-auto-rows: 22rem;
+    grid-template-columns: repeat(auto-fill, minmax(14rem, 1fr));
+}
+
+.producto__card__imagen{
+    height: 279px;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.producto__card__imagen,
+.producto__card__titulo,
+.producto__card__precio{
+    margin-bottom: .5rem;
+}
+
+.producto__card__titulo{
+    color: #464646;
+}
+
+.producto__card__precio{
+    font-weight: 800;
+}
+
+.producto__card__boton{
+    color: #2A7AE4;
+    font-weight: 800;
+}
+
+.productos__resultados_mensaje{
+    height: 30vh;
+    font-weight: 700;
+    font-size: 2rem;
+    color: #464646;
+}
+
+/* ------------------------------------ */
+/* ----- Responsive para Mobiles ------ */
+/* ------------------------------------ */
+
+@media only screen and (max-width: 767px){
+
+}
+
+/* ------------------------------------ */
+/* ----- Responsive para Tablets ------ */
+/* ------------------------------------ */
+
+@media (min-width:768px) and (max-width:1024px){
+
+    .productos__resultados_mensaje{
+        height: 48vh;
+    }
+
+}
+
+/* https://i.ibb.co/ydRhHsL/producto-1.png
+https://i.ibb.co/35bTz5c/producto-2.png
+https://i.ibb.co/1TybsXT/producto-3.png
+https://i.ibb.co/C1VKkRC/producto-4.png
+https://i.ibb.co/5xrv1Xq/producto-5.png
+https://i.ibb.co/VjsTyxm/producto-6.png
+
+https://i.ibb.co/WyzMJtC/consola-1.png
+https://i.ibb.co/0BpJthg/consola-2.png
+https://i.ibb.co/JQjVwYX/consola-3.png
+https://i.ibb.co/b3xr74X/consola-4.png
+https://i.ibb.co/SrSD1fz/consola-5.png
+https://i.ibb.co/SX5xWzC/consola-6.png
+
+https://i.ibb.co/B3V2KrM/diversos-1.png
+https://i.ibb.co/r2L7LDq/diversos-2.png
+https://i.ibb.co/NxfKpVZ/diversos-3.png
+https://i.ibb.co/0yzSJ50/diversos-4.png
+https://i.ibb.co/LpY04k4/diversos-5.png
+https://i.ibb.co/JdfLkV6/diversos-6.png */
